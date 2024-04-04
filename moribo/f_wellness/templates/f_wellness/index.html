@@ -1,0 +1,578 @@
+{% load static %}
+
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" type="image/x-icon" href="{% static 'f_wellness/img/favicon.ico' %}">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="{% static 'f_wellness/css/bootstrap.min.css' %}">
+    <link rel="stylesheet" href="{% static 'f_wellness/css/owl.carousel.min.css' %}">
+    <link rel="stylesheet" href="{% static 'f_wellness/css/owl.theme.default.min.css' %}">
+    <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="{% static 'f_wellness/css/style.css' %}">
+
+    <title>Moribo Financial Wellness</title>
+    <style>
+        .slide1 {
+        background-image: url("{% static 'f_wellness/img/financial_freedom.jpg' %}");
+        
+        }
+        
+        .slide2 {
+            background-image: url("{% static 'f_wellness/img/climbing.jpg' %}"); 
+        }
+
+        body{
+            background-color: white;
+        }
+
+        .col-lg-5 {
+            padding: 40px;
+        }
+    </style>
+    
+</head>
+
+<body data-bs-spy="scroll" data-bs-target=".navbar" data-bs-offset="70">
+
+
+    <!-- TOP NAV -->
+    <div class="top-nav" id="home">
+        <div class="container">
+            <div class="row justify-content-between">
+                <div class="col-auto">
+                    <p> <i class='bx bxs-envelope'></i> info@moribofwellness.co.za</p>
+                    <p> <i class='bx bxs-phone-call'></i> 012 456-7890</p>
+                </div>
+                <div class="col-auto social-icons">
+                    <a href="#"><i class='bx bxl-facebook'></i></a>
+                    <a href="#"><i class='bx bxl-twitter'></i></a>
+                    <a href="#"><i class='bx bxl-instagram'></i></a>
+                    <a href="#"><i class='bx bxl-pinterest'></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- BOTTOM NAV -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-white sticky-top">
+        <div class="container">
+            <a class="navbar-brand" href="#">Moribo Financial Wellness<span class="dot">.</span></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="{% url 'index' %}">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#services">Services</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#portfolio">Portfolio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#team">Team</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#reviews">Reviews</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#blog">Blog</a>
+                    </li>
+                </ul>
+                <a href="#" data-bs-toggle="modal" data-bs-target="#exampleModal"
+                    class="btn btn-brand ms-lg-3">Contact</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- SLIDER -->
+    <div class="owl-carousel owl-theme hero-slider">
+        <div class="slide slide1">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12 text-center text-white">
+                        <h1 class="display-3 my-4">The goal isn't more money.<br />The goal is living life on your terms.</h1>
+                        <a href="#" class="btn btn-brand">Get Started</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="slide slide2">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12 text-center text-white">
+                        <h1 class="display-3 my-4" style="
+                        opacity: 90%; ">"Climb the stairs of financial wellness"</h1>
+                        <a href="#" class="btn btn-brand">Get Started</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ABOUT -->
+    <section id="about">
+            <div class="row justify-content-center">
+                <div class="col-lg-5 py-5">
+                    <div class="row">
+                        <div class="intro">
+                            <h1>About Us</h1>
+                            <p class="mx-auto"></p>
+                        </div>
+                        <div class="col-12">
+                            <div class="info-box">
+                                <img src="{% static 'f_wellness/img/personal_financial_wellness.png' %}" alt="">
+                                <div class="ms-4">
+                                    <h5>Personal financial Wellness Management</h5>
+                                    <p>It is a long established fact that a reader will be distracted by the readable
+                                        content of a page </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 mt-4">
+                            <div class="info-box">
+                                <img src="{% static 'f_wellness/img/debt.png' %}" alt="">
+                                <div class="ms-4">
+                                    <h5>Debt Management Services and Solutions</h5>
+                                    <p>It is a long established fact that a reader will be distracted by the readable
+                                        content of a page </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 mt-4">
+                            <div class="info-box">
+                                <img src="{% static 'f_wellness/img/housing.png' %}" alt="">
+                                <div class="ms-4">
+                                    <h5>Housing and Homeowenership Assistance Programs</h5>
+                                    <p>It is a long established fact that a reader will be distracted by the readable
+                                        content of a page </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-5">
+                    <img src="{% static 'f_wellness/img/mission2.png' %}" alt="">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- MILESTONE -->
+    <section id="milestone">
+        <div class="container">
+            <div class="row text-center justify-content-center gy-4">
+                <div class="col-lg-2 col-sm-6">
+                    <h1 class="display-4">90K+</h1>
+                    <p class="mb-0">Happy Clients</p>
+                </div>
+                <div class="col-lg-2 col-sm-6">
+                    <h1 class="display-4">45M</h1>
+                    <p class="mb-0">Lines of code</p>
+                </div>
+                <div class="col-lg-2 col-sm-6">
+                    <h1 class="display-4">190</h1>
+                    <p class="mb-0">Total Downloads</p>
+                </div>
+                <div class="col-lg-2 col-sm-6">
+                    <h1 class="display-4">380K</h1>
+                    <p class="mb-0">YouTube Subscribers</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="services" class="text-center">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <div class="intro">
+                        <h1>What We Do?</h1>
+                        <p class="mx-auto">Contrary to popular belief, Lorem Ipsum is not simply random text. It has
+                            roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old</p>
+                    </div>
+                </div>
+            </div>
+            <div class="row g-4">
+                <div class="col-lg-4 col-md-6">
+                    <div class="service">
+                        <img src="img/icon1.png" alt="">
+                        <h5>Voluntary Payroll Deductions and Management</h5>
+                        <p>Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of
+                            classical Latin literature from</p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="service">
+                        <img src="img/icon2.png" alt="">
+                        <h5>Facilitated Intervention Programs</h5>
+                        <p>Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of
+                            classical Latin literature from</p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="service">
+                        <img src="img/icon3.png" alt="">
+                        <h5>Upskilling & Training</h5>
+                        <p>Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of
+                            classical Latin literature from</p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="service">
+                        <img src="img/icon4.png" alt="">
+                        <h5>Intergrated Financcial Wellness Events</h5>
+                        <p>Integrated Financial Wellness Events are gatherings that promote financial health and well-being. They include workshops and seminars to educate participants on key financial concepts and tools, 
+                            empowering them to make informed decisions and achieve their financial goals.</p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="service">
+                        <img src="img/icon5.png" alt="">
+                        <h5>Facilitated Personal Insurance Services</h5>
+                        <p>provide assistance in selecting and managing insurance policies tailored to individual needs. These services offer guidance on various insurance options, 
+                            helping clients secure coverage that suits their lifestyle and financial circumstances.<br></p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="service">
+                        <img src="img/icon6.png" alt="">
+                        <h5>Facilitated Lending Solutions</h5>
+                        <p>Facilitated Lending Solutions offer assistance in accessing and managing loans tailored to individual or business needs. These services help clients navigate lending options, ensuring they secure suitable terms and rates for their financial circumstances.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="bg-light" id="portfolio">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <div class="intro">
+                        <h6>Work</h6>
+                        <h1>Successful Stories</h1>
+                        <p class="mx-auto">"Discover the inspiring success stories of businesses that have partnered with Moribo Financial Wellness. From overcoming financial challenges to achieving remarkable growth, our clients' stories showcase the transformative impact of our services. Explore these stories and envision your own success with Moribo Financial Wellness."</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="projects-slider" class="owl-theme owl-carousel">
+            <div class="project ">
+                <div class="overlay"></div>
+                <img src="{% static 'f_wellness/img/bmw2.jpg' %}" alt="">
+                <div class="content">
+                    <h2>Debt Counselling</h2>
+                    <h6></h6>
+                </div>
+            </div>
+            <div class="project">
+                <div class="overlay"></div>
+                <img src="{% static 'f_wellness/img/mercedes.jpg' %}" alt="">
+                <div class="content">
+                    <h2>Consulting Marketing</h2>
+                    <h6></h6>
+                </div>
+            </div>
+            <div class="project">
+                <div class="overlay"></div>
+                <img src="{% static 'f_wellness/img/moribo_training.jpg' %}" alt="">
+                <div class="content">
+                    <h2>Financial Wellness Training</h2>
+                    <h6></h6>
+                </div>
+            </div>
+            <div class="project">
+                <div class="overlay"></div>
+                <img src="{% static 'f_wellness/img/project1.jpg' %}" alt="">
+                <div class="content">
+                    <h2>Consulting Marketing</h2>
+                    <h6></h6>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="team">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <div class="intro">
+                        <h1>Team Members</h1>
+                        <p class="mx-auto"></p>
+                    </div>
+                </div>
+            </div>
+            <div class="row justify-content-center">
+                <div class="col-lg-4 col-md-8">
+                    <div class="team-member">
+                        <div class="image">
+                            <img src="{% static 'f_wellness/img/maud.jpg' %}" alt="">
+                            <div class="social-icons">
+                                <a href="#"><i class='bx bxl-facebook'></i></a>
+                                <a href="#"><i class='bx bxl-twitter'></i></a>
+                                <a href="#"><i class='bx bxl-instagram'></i></a>
+                                <a href="#"><i class='bx bxl-pinterest'></i></a>
+                            </div>
+                            <div class="overlay"></div>
+                        </div>
+
+                        <h5>Maud Mogodi</h5>
+                        <p>Director</p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-8">
+                    <div class="team-member">
+                        <div class="image">
+                            <img src="{% static 'f_wellness/img/thabani.jpg' %}" alt="">
+                            <div class="social-icons">
+                                <a href="#"><i class='bx bxl-facebook'></i></a>
+                                <a href="#"><i class='bx bxl-twitter'></i></a>
+                                <a href="#"><i class='bx bxl-instagram'></i></a>
+                                <a href="#"><i class='bx bxl-pinterest'></i></a>
+                            </div>
+                            <div class="overlay"></div>
+                        </div>
+
+                        <h5>Thabani Mdletshe</h5>
+                        <p>COO</p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-8">
+                    <div class="team-member">
+                        <div class="image_t">
+                            <img src="{% static 'f_wellness/img/tshidiso.png' %}" alt="">
+                            <div class="social-icons">
+                                <a href="#"><i class='bx bxl-facebook'></i></a>
+                                <a href="#"><i class='bx bxl-twitter'></i></a>
+                                <a href="#"><i class='bx bxl-instagram'></i></a>
+                                <a href="#"><i class='bx bxl-pinterest'></i></a>
+                            </div>
+                            <div class="overlay"></div>
+                        </div>
+
+                        <h5>Thsidiso Modikwe</h5>
+                        <p>CTO</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="bg-light" id="reviews">
+
+        <div class="owl-theme owl-carousel reviews-slider container">
+            <div class="review">
+                <div class="person">
+                    <img src="{% static 'f_wellness/img/maud.jpg' %}" alt="">
+                    <h5>Maud Mogodi</h5>
+                    <small>Managing Director</small>
+                </div>
+                <h3>
+
+                    Maud is the Founding and Managing Director of Moribo Holding Company. She has a combined experience of over 14 years in banking and the Real Estate and Housing Developments environments, with the majority of this being in the banking industry. Outside the banking industry, Maud has more than 10years of experience in both Community Relations and Marketing and Sales environments.                    
+                    Maud is a qualified Debt Counsellor coupled with qualifications in Communications, Marketing and PR, Project Management – in both the built environment and general projects. Her vast experience ranging from running her own enterprises, to real estate franchising and banking has equipped her to handle multiple entities with flair.
+                    </h3>
+                <div class="stars">
+                    <i class='bx bxs-star'></i>
+                    <i class='bx bxs-star'></i>
+                    <i class='bx bxs-star'></i>
+                    <i class='bx bxs-star'></i>
+                    <i class="bx bxs-star-half"></i>
+                </div>
+                <i class='bx bxs-quote-alt-left'></i>
+            </div>
+            <div class="review">
+                <div class="person">
+                    <img src="{% static 'f_wellness/img/thabani.jpg' %}" alt="">
+                    <h5>Thabani Mdletshe</h5>
+                    <small>COO</small>
+                </div>
+                <h3>Thabani is the Operations Director of Moribo Financial Wellness Company. He is a registered Debt Counsellor with a combined 15 years’ experience spread across debt counselling, financial advice and financial training industries. A seasoned training facilitator, Thabani's focus is mainly on offering training on financial literacy and retiring financially fit modules</h3>
+                <div class="stars">
+                    <i class='bx bxs-star'></i>
+                    <i class='bx bxs-star'></i>
+                    <i class='bx bxs-star'></i>
+                    <i class='bx bxs-star'></i>
+                    <i class="bx bxs-star-half"></i>
+                </div>
+                <i class='bx bxs-quote-alt-left'></i>
+            </div>
+            <div class="review">
+                <div class="person">
+                    <img src="{% static 'f_wellness/img/tshidiso.png' %}" alt="">
+                    <h5>Tshidiso Modikwe</h5>
+                    <small>CTO</small>
+                </div>
+                <h3>Tshidiso Modikwe is an exceptional Chief Technology Officer who combines strong leadership with deep technical expertise. His visionary approach to technology and ability to inspire teams have been instrumental in driving our company's success. Tshidiso's innovative solutions and collaborative leadership style make him a valuable asset to any organization.</h3>
+                <div class="stars">
+                    <i class='bx bxs-star'></i>
+                    <i class='bx bxs-star'></i>
+                    <i class='bx bxs-star'></i>
+                    <i class='bx bxs-star'></i>
+                    <i class="bx bxs-star-half"></i>
+                </div>
+                <i class='bx bxs-quote-alt-left'></i>
+            </div>
+        </div>
+    </section>
+
+    <section id="testimonials">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <div class="intro">
+                        <h6>Testimonials</h6>
+                        <h1>What Our Clients Say</h1>
+                        <p class="mx-auto">Read testimonials from our satisfied clients</p>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="testimonial">
+                        <img src="{% static 'f_wellness/img/bmw-logo.jpg' %}" alt="">
+                        <div class="content">
+                            <h5>BMW</h5>
+                            <p>“Collaborating with Moribo Financial Wellness has been a transformative experience for BMW. Their innovative solutions and dedicated team have propelled our business to new heights. I highly recommend Moribo Financial Wellness to anyone seeking exceptional financial services.”</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="testimonial">
+                        <img src="{% static 'f_wellness/img/mercedes-logo.jpg' %}" alt="">
+                        <div class="content">
+                            <h5>Mercedes Benz</h5>
+                            <p>“Our partnership with Moribo Financial Wellness has been nothing short of exceptional. Their professionalism and attention to detail are unmatched. Moribo Financial Wellness has played a crucial role in our success, and we wholeheartedly recommend them.”</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="testimonial">
+                        <img src="{% static 'f_wellness/img/terahx-logo.png' %}" alt="">
+                        <div class="content">
+                            <h5>TerahX Solutions</h5>
+                            <p>“Choosing Moribo Financial Wellness was one of the best decisions we made for our business at TerahX Solutions. Their expertise and guidance have been instrumental in navigating the complex financial landscape. We highly recommend Moribo Financial Wellness to any organization looking for financial wellness solutions.”</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+
+    <footer>
+        <div class="footer-top text-center">
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-lg-6 text-center">
+                        <h4 class="navbar-brand">Moribo Financial Wellness<span class="dot">.</span></h4>
+                        <p>Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of
+                            classical Latin literature from</p>
+                        <div class="col-auto social-icons">
+                            <a href="#"><i class='bx bxl-facebook'></i></a>
+                            <a href="#"><i class='bx bxl-twitter'></i></a>
+                            <a href="#"><i class='bx bxl-instagram'></i></a>
+                            <a href="#"><i class='bx bxl-pinterest'></i></a>
+                        </div>
+                        <div class="col-auto conditions-section">
+                            <a href="#">privacy</a>
+                            <a href="#">terms</a>
+                            <a href="#">disclaimer</i></a>
+                        </div>
+                        <div class="col-auto whatsapp-section">
+                            <a href="https://wa.me/27670926002" target="_blank" class="btn btn-whatsapp"><i class="bx bxl-whatsapp"></i> WhatsApp</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom text-center">
+            <p class="mb-0">010 013 2007 | 043 289 0918 | <a href="https://wa.me/27670926002" target="_blank">067 092 6002 (WhatsApp)</a> | info@moribofws.co.za</p>
+            <p class="mb-0">www.moriboholdings.co.
+            <p class="mb-0">Copyright moribo financial wellness 2024</p>za | www.moribofws.co.za</p>
+        </div>
+    </footer>
+    
+
+
+    <!-- Modal -->
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-xl">
+            <div class="modal-content">
+                <div class="modal-body p-0">
+                    <div class="container-fluid">
+                        <div class="row gy-4">
+                            <div class="col-lg-4 col-sm-12 bg-cover"
+                                style="background-image: url(img/c2.jpg); min-height:300px;">
+                                <div>
+
+                                </div>
+                            </div>
+                            <div class="col-lg-8">
+                                <form class="p-lg-5 col-12 row g-3">
+                                    <div>
+                                        <h1>Get in touch</h1>
+                                        <p>Fell free to contact us and we will get back to you as soon as possible</p>
+                                    </div>
+                                    <div class="col-lg-6">
+                                        <label for="userName" class="form-label">First name</label>
+                                        <input type="text" class="form-control" placeholder="Jon" id="userName"
+                                            aria-describedby="emailHelp">
+                                    </div>
+                                    <div class="col-lg-6">
+                                        <label for="userName" class="form-label">Last name</label>
+                                        <input type="text" class="form-control" placeholder="Doe" id="userName"
+                                            aria-describedby="emailHelp">
+                                    </div>
+                                    <div class="col-12">
+                                        <label for="userName" class="form-label">Email address</label>
+                                        <input type="email" class="form-control" placeholder="Johndoe@example.com"
+                                            id="userName" aria-describedby="emailHelp">
+                                    </div>
+                                    <div class="col-12">
+                                        <label for="exampleInputEmail1" class="form-label">Enter Message</label>
+                                        <textarea name="" placeholder="This is looking great and nice."
+                                            class="form-control" id="" rows="4"></textarea>
+                                    </div>
+
+                                    <div class="col-12">
+                                        <button type="submit" class="btn btn-brand">Send Message</button>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+
+    <script src="{% static 'f_wellness/js/jquery.min.js' %}"></script>
+    <script src="{% static 'f_wellness/js/bootstrap.bundle.min.js' %}"></script>
+    <script src="{% static 'f_wellness/js/owl.carousel.min.js' %}"></script>
+    <script src="{% static 'f_wellness/js/app.js' %}"></script>
+</body>
+
+</html>
