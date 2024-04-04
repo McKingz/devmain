@@ -1,3 +1,5 @@
+{% load static %}
+
 <!doctype html>
 <html lang="en">
 
@@ -12,17 +14,17 @@
     <link rel="stylesheet" href="{% static 'f_wellness/css/owl.carousel.min.css' %}">
     <link rel="stylesheet" href="{% static 'f_wellness/css/owl.theme.default.min.css' %}">
     <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
-    <link rel="stylesheet" href="static/f_wellness/css/style.css">
+    <link rel="stylesheet" href="{% static 'f_wellness/css/style.css' %}">
 
     <title>Moribo Financial Wellness</title>
     <style>
         .slide1 {
-        background-image: url("static/f_wellness/img/financial_freedom.jpg");
+        background-image: url("{% static 'f_wellness/img/financial_freedom.jpg' %}");
         
         }
         
         .slide2 {
-            background-image: url("static/f_wellness/img/climbing.jpg"); 
+            background-image: url("{% static 'f_wellness/img/climbing.jpg' %}"); 
         }
 
         body{
@@ -131,7 +133,7 @@
                         </div>
                         <div class="col-12">
                             <div class="info-box">
-                                <img src="static/f_wellness/img/personal_financial_wellness.png" alt="">
+                                <img src="{% static 'f_wellness/img/personal_financial_wellness.png' %}" alt="">
                                 <div class="ms-4">
                                     <h5>Personal financial Wellness Management</h5>
                                     <p>It is a long established fact that a reader will be distracted by the readable
